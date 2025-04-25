@@ -32,3 +32,11 @@ predicted_iris_species = target_names[prediction[0]]
 # output prediction
 st.title("Iris Prediction")
 st.write(f"Predicted Species: **{predicted_iris_species}** :sunglasses:")
+
+# also output a picture for the prediction
+if predicted_iris_species == 'setosa':
+    st.image("./images/setosa.jpg", caption="Iris Setosa")
+elif predicted_iris_species == 'versicolor':
+    st.image(".images/versicolor.jpg", caption="Iris Versicolor")
+elif predicted_iris_species == 'virginica':
+    st.image("./images/virginica.jpg", caption="Iris Virginica")
