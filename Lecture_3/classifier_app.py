@@ -21,7 +21,7 @@ model.fit(features, target)
 # Add classification sliders
 st.sidebar.title("Iris Features")
 petal_length = st.sidebar.slider("Petal length", float(features[:, 0].min()), float(features[:, 0].max()))
-petal_width = st.sidebar.slider("Petal width", float(features[:, 0].min()), float(features[:, 0].max()))
+petal_width = st.sidebar.slider("Petal width", float(features[:, 1].min()), float(features[:, 1].max()))
 
 input_data = [[petal_length, petal_width]]
 
@@ -37,6 +37,6 @@ st.write(f"Predicted Species: **{predicted_iris_species}** :sunglasses:")
 if predicted_iris_species == 'setosa':
     st.image("./images/setosa.jpg", caption="Iris Setosa")
 elif predicted_iris_species == 'versicolor':
-    st.image(".images/versicolor.jpg", caption="Iris Versicolor")
+    st.image("./images/versicolor.jpg", caption="Iris Versicolor")
 elif predicted_iris_species == 'virginica':
     st.image("./images/virginica.jpg", caption="Iris Virginica")
