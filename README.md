@@ -1,6 +1,7 @@
 # Machine Learning 101
 Files used in YouTube video series, available for public use.
 
+![Educational](https://img.shields.io/badge/Purpose-Educational-blue)
 
 To use the GUI application for ML model learning:
 
